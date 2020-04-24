@@ -8,6 +8,12 @@ body {
 	background-repeat: no-repeat;
 }
 
+table, tr, td {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
 .navegator {
 	margin-top: 50px;
 
@@ -44,33 +50,16 @@ body {
 
 .Principal {
 	margin-top: 50px;
+	height: 100%;
+	width: 100%;
 
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .Principal img {
-	margin-right: 10px;
-
 	width: 100%;
 	height: 100%;
-
-	border: 2px solid black;
-	border-radius: 50%;
-}
-
-.Principal p {
-	margin: 20px  0 0 0;
-
-	font-size: 20px;
-	text-align: left;
-}
-
-.Principal section {
-	width: 100%;
-	height: 200px;
-
-	display: flex;
 }
 
 .image {
@@ -98,4 +87,18 @@ body {
 
 .Second {
 	padding-left: 10px;
+}
+
+.Con {
+	width: 200px;
+	height: 350px;
+}
+
+.cuerpo {
+	width: 95%;
+	height: 350px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
