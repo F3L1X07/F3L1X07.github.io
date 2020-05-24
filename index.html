@@ -1,45 +1,63 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
+	<title> Producto Final  </title>
 	<meta charset="utf-8">
-	<title> Actividad de Plataforma </title>
-
-	<!-- Link de Estilos --> 
-	<link rel="stylesheet" type="text/css" href="Tarea 3.1 (Dreamweaver)/CSS/Menu (CSS).css">
+	<link rel="stylesheet" type="text/css" href="Producto Final/Estilos.css">
 </head>
 <body>
-	<header class="title" style="vertical-align: middle;">
-		<h1>Tarea 3.1 (Dreamviewer)</h1>
-	</header>
-
-	<article class="Principal">
-		<a href="Tarea 3.1 (Dreamweaver)/Student.html">
-			<div> <img src="Tarea 3.1 (Dreamweaver)/Images/agenda.png"> </div>
-			<p> Frames </p>
-		</a>
-		
-		<a href="Tarea 3.1 (Dreamweaver)/Addressing.html">
-			<div> <img src="Tarea 3.1 (Dreamweaver)/Images/Liga.png"> </div>
-			<p> Addressing </p>
-		</a>
-
-		<a href="Tarea 3.1 (Dreamweaver)/Sounds.html">
-			<div> <img src="Tarea 3.1 (Dreamweaver)/Images/sound.png"> </div>
-			<p> Sounds </p>
-		</a>
+	<article>
+		<h2>
+			Mis Experiencias propias como alumno "Tecnologo Profesional en Sistemas Informaticos"
+			en la Escuela Politecnica de Guadalajara
+		</h2>
 	</article>
 
-	<footer>
-		<div class="image">
-			<img class="img" src="Tarea 3.1 (Dreamweaver)/Images/username-icon.png">
+	<section>
+		<div class="Audio-div">
+			<audio id="Audio" src="Producto Final/Sounds/Musica.mp3" preload> </audio>
+			<div class="Audio-btn" onclick="playAudio()"> Audio de Fondo  </div>
+			<div class="Audio-btn" onclick="pauseAudio()"> Pause </div>
 		</div>
 
-		<div>
-			<p> Tecnologo Profesional en Sistemas Informaticos </p>
-			<p> Estrada Huerta Felix Eduardo </p>
-			<p> <span>8°B</span> <span> Turno: Matutino </span> </p>
-			<p align="right"> Escuela Politecnica de Guadalajara </p>
+		<div class="Txt">
+			<p> 
+				A lo largo de mi estancia en esta preparatoria puedo decir ha sido bastante agradable, Las enseñanzas de mis profesores, la convivencia con mis compañeros que me ayudaron a superar algunos de mis obstaculos más dificiles.
+
+				Durante toda esta etapa de mi vida en la preparatoria, logre aprender algiunos de los programas principales para la programación, cómo seria un ejemplo Python, C, Java, C++, JavaScript, entre otros.</p>
 		</div>
-	</footer>
+	
+
+		<div class="Img-Div">
+			<img src="Producto Final/Imagenes/Escuela.jpg">
+		</div>
+
+		<div class="Txt">
+			<p>
+				Ademas de los lenguajes de programación aprendidos, tambien logre aprenders obre el diseño de aplicaciones web, donde adquirí conocimientos sobre html y css, Por lo cual, puedo realizar páginas web (Como está misma). </p>
+
+			<p>
+				Al inscribirme en esta escuela me esperaba mucho que al final de mi carrera pudiera realizar mis practicas profesionales en una de las mejores empresas y así obtener experiencia laboral. 
+				Sin embargo, la empresa que seleccione "fiscalia del estado de jalisco", no permitio que mis compañeros o a mi poder realizar las practicas. Lo anterior aunado al surgimiento de una pandemia que obligo al gobierno mexicano en todos sus niveles a suspender actividades no esenciales. 
+				Al final recibimos todos la carta de termino de las practicas profesionales, pero no la experiencia que podriamos haber obtenido. </p>
+		</div>
+		
+	</section>
+
+	<h2> Acerca de la Escuela politecnica </h2>
+	<div class="Img-Div">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Rtsd9G5sqD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<script type="text/javascript">
+		var x = document.getElementById("Audio");
+		function playAudio() {
+		  x.play();
+		}
+
+		function pauseAudio() {
+		  x.pause();
+		}
+	</script>
 </body>
 </html>

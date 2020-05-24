@@ -1,0 +1,57 @@
+/* {
+	border: solid red 1px;
+}*/
+
+body {
+	background-image: url('Imagenes/Fondo.jpg');
+	background-size: cover;
+	font-family: TypeText;
+	color: white;
+}
+
+h2 {
+	margin: 10px 2px;
+
+	text-align: center;
+	font-size: 40px;
+}
+
+.Audio-div {
+	display: flex;
+	justify-content: space-around;
+}
+
+.Audio-btn {
+	width: 150px;
+	height: 20px;
+
+	margin: 20px auto;
+	padding: 5px;
+
+	background-color: orange;
+	text-align: center;
+
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.Img-Div {
+	text-align: center;
+}
+
+.Img-Div img {
+	width: 400px;
+}
+
+.Txt {
+	margin: auto;
+	width: 80vw;
+
+	text-align: justify;
+	font-size: 20px;
+}
+
+@font-face {
+	font-family: TypeText;
+	src: url(Fonts/Caligraf.ttf);
+}
